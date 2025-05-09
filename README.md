@@ -1,4 +1,4 @@
-# Age Calculator
+# Movie List App 🎬 - CRUD operations
 
 ## Table of Contents
 
@@ -16,14 +16,17 @@
 
 ## Project Description 📜
 
-The **Age Calculator** is a simple web application built using JavaScript, designed to calculate a user’s exact age based on their birthdate input. The goal is to reinforce concepts such as **JavaScript classes**, **date manipulation**, and **DOM interaction**.
+The **Movie Application** is a dynamic web-based app developed to practice and apply JavaScript skills learned during the course. Users can add their favorite movies, manage them by editing or deleting, and build a personalized list of favorite titles. The application includes a fully interactive interface using modals, dynamic rendering, and routing.
 
 ### Key Features:
 
-- Users can input their **birthdate** through an input field.
-- The application calculates the user’s **age in years, months, OR weeks**.
-- It uses a custom `AgeCalculator` class to handle logic and calculations.
-- The calculated age is displayed dynamically on the page.
+- Add a new movie by entering details like **title**, **director**, **release year**, **summary**, **category**, and **rating** in a modal form.
+- View all added movies on the **Home** page with movie cards generated dynamically.
+- **Edit or delete** movies by interacting with each movie card. Clicking **Edit** opens a pre-filled modal where changes can be made and saved.
+- Mark movies as **favorites** by clicking a favorite icon, then view all marked titles on a separate **Favorites** page accessible via the navigation bar.
+- Use the **search bar** on the Home page to filter movies by title.
+
+All features aim to simulate a real-world movie management system while focusing on object handling, event delegation, and DOM manipulation with JavaScript.
 
 ---
 
@@ -42,7 +45,7 @@ The **Age Calculator** is a simple web application built using JavaScript, desig
 
 You can try out the Age Calculator by visiting the live demo link below:
 
-- [Live Demo - Age Calculator](https://age-calculator-makedonkatochevska.netlify.app/)
+- [Live Demo - Movie Application](https://your-demo-link.netlify.app)
 
 ---
 
@@ -54,7 +57,7 @@ To run these exercises locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/makedonkatochevska/age_calculator.git .
+   git clone https://github.com/makedonkatochevska/movie_list_app_crud.git .
    ```
 2. Open the index.html file into the browser of choice.
 
@@ -62,38 +65,41 @@ To run these exercises locally, follow these steps:
 
 ## Usage 🚀
 
-### How to Use the Age Calculator
+1. **Add a Movie**
 
-1. **Enter Your Birthdate**
+   - Click the **Add Movie** button to open a modal form.
+   - Enter the **Title**, **Director**, **Year of Release**, **Short Summary**, **Category**, **Rating**, and any other desired fields.
+   - Submit the form to add the movie to the Home page list.
 
-   - Use the date picker input field to select your birthdate.
+2. **Edit or Delete a Movie**
 
-2. **Click the "Calculate" Button**
+   - Each movie card on the Home page includes **Edit** and **Delete** options.
+   - Clicking **Edit** opens a modal pre-filled with the movie's current details. Make your changes and save.
+   - Click **Delete** to remove the movie after confirming the action.
 
-   - Triggers the age calculation function using a custom JavaScript class.
+3. **Mark as Favorite**
 
-3. **View the Result**
-   - Your exact age will be displayed in:
-     - **Years**
-     - **Months**
-     - **Weeks**
+   - Click the **Add to Favorite** icon on any movie card to add it to your favorites.
+   - The movie will be stored and displayed on the Favorites page.
 
-### Under the Hood 🧠
+4. **View Favorites**
 
-- The `AgeCalculator` class is initialized with the selected birthdate.
-- The `calculateAge()` method computes the difference between the birthdate and the current date.
-- The `displayAge()` function outputs the calculated age to the UI dynamically.
+   - Use the **Favorites** link in the navigation bar to view all movies marked as favorites.
+   - Movies can also be removed from this list by clicking the Favorite icon again.
+
+5. **Search Movies**
+
+   - On the Home page, use the **search bar** to find movies by title.
+   - The results update in real-time as you type.
+
+6. **Persistent Data**
+   - All movie data is stored in **localStorage**, so your added, edited, and favorite movies remain intact even after refreshing or closing the browser.
 
 ---
 
 ## Credits 📝
 
-This project was developed as part of a JavaScript challenge to practice:
-
-- Working with JavaScript **classes** and **date manipulation**
-- Creating dynamic **user interfaces**
-- Applying real-world **calculations** based on user input
-- DOM interaction and **event handling**
+This project was developed during a JavaScript workshop to reinforce knowledge in DOM manipulation, event handling, dynamic UI rendering, object management, and routing concepts.
 
 ---
 
