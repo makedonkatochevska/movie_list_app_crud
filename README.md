@@ -45,7 +45,7 @@ All features aim to simulate a real-world movie management system while focusing
 
 You can try out the Age Calculator by visiting the live demo link below:
 
-- [Live Demo - Movie Application](https://your-demo-link.netlify.app)
+- [Live Demo - Movie Application](https://movie-list-crud-makedonkatochevska.netlify.app/)
 
 ---
 
